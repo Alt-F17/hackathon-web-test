@@ -1,0 +1,59 @@
+{
+    "name": "hackathon-website",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "tailwind:build": "tailwindcss build src/styles/tailwind.css -o src/styles/tailwind.output.css"
+    },
+    "homepage": "https://Alt-F17.github.io/hackathon-website",
+    "dependencies": {
+        "@monaco-editor/react": "^4.4.6",
+        "axios": "^1.8.2",
+        "firebase": "^11.4.0",
+        "formik": "^2.2.9",
+        "framer-motion": "^4.1.17",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-router-dom": "^5.2.0",
+        "tailwindcss": "^2.2.19",
+        "yup": "^0.32.11"
+    },
+    "devDependencies": {
+        "gh-pages": "^6.3.0",
+        "react-scripts": "^5.0.1"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app"
+        ]
+    },
+    "overrides": {
+        "svgo": {
+            "nth-check": "^2.0.1"
+        },
+        "resolve-url-loader": {
+            "postcss": "^8.4.31"
+        },
+        "rollup-plugin-terser": {
+            "serialize-javascript": "^6.0.2"
+        }
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}
