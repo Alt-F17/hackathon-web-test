@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/hackathon-web-test/**", "destination": "/$1" }
+  ],
+  "trailingSlash": false
+}
